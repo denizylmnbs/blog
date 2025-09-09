@@ -1,17 +1,13 @@
-from rest_framework import generics, permissions
+from rest_framework import viewsets, permissions
 from .models import Comment
 from .serializers import CommentSerializer
 
 # Create your views here.
 
-class CommentListCreateView(generics.ListCreateAPIView):
+class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-
-
     def perform_create(self, serializer):
-        serializer.save(
-            post_id=self.kwargs.get('pk'),
-            author=self.request.user)
+        serializer.save(author=self.request.user)
