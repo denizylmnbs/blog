@@ -29,13 +29,3 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return user
-
-
-{
-  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NzQxMzI1MiwiaWF0IjoxNzU3MzI2ODUyLCJqdGkiOiJkYmQxYjVkYjNmNTc0NGVmOWEzM2RlNmFhMzUzYzIxNyIsInVzZXJfaWQiOiIyIn0.gaQxI9ZbX2XQ8ozL-OHbzZgZOSWzfsIt54as0PFfH8Q",
-  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU3MzI3MTUyLCJpYXQiOjE3NTczMjY4NTIsImp0aSI6IjM5NzYwM2E5OWIxMzQ0ZjE5ZGU4N2QxMmRjMmMyZjM0IiwidXNlcl9pZCI6IjIifQ.JJGlFCLtur49NwbCwoJ6cT6HigosHtHJMV1-UpxLqS0"
-}
-
-{
-  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU3MzI3NzE0LCJpYXQiOjE3NTczMjc0MTQsImp0aSI6IjI4ZmI2YWQ4Njg3YzQyMzFiZWI1NTBhZWFiMTE0NzA3IiwidXNlcl9pZCI6IjIifQ.M-GEdIw2plDcUs7gpj9mYNVYwANpH6WIPZ60urP-FW8"
-}
